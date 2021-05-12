@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="layout::main-header">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center">Edit Blog</h1>
+
+
+<div class="container">
+
+    <form action="#" th:action="@{/blog/update}" th:object="${edit}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <input type="hidden" th:field="*{registrationDate}">
+        <div class="form-control">
+            <label class="container">Title</label>
+            <label>
+                <input type="text" class="form-control" th:field="*{title}"/>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>Category</label>
+            <select class="form-control" th:field="*{category}">
+                <option class="form-control" th:each="type : ${categories}" th:value="${type.id}"
+                        th:text="${type.name}"></option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Context</label>
+            <label class="form-control">
+                <textarea type="text" th:field="*{context}"></textarea>
+            </label>
+        </div>
+        <div class="form-control">
+            <input type="submit" class="btn btn-primary" value="Edit"/>
+            <p>
+                <a th:href="@{/blog}">Back to menu</a>
+            </p>
+        </div>
+
+    </form>
+</div>
+
+
+<th:block th:insert="layout::js">
+
+</th:block>
+</body>
+</html>

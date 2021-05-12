@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e3ec8b5-8c41-44ee-9bac-5cd240484b9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/CaseStudy2/sql/caseStudy.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/CaseStudy2/sql/caseStudy.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/ThiModule3/src/repository/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/ThiModule3/src/repository/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/ThiModule3/web/phongtro/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/ThiModule3/web/phongtro/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/ThiModule3/web/phongtro/save.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/ThiModule3/web/phongtro/save.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai07_Spring_Data_Repository/baitap/blog/src/main/java/com/example/blog_extend/controler/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai07_Spring_Data_Repository/baitap/blog/src/main/java/com/example/blog_extend/controler/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai09_ AOP_Exception_Handling/baitap/book/src/main/java/com/example/aop/aop/BookAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai09_ AOP_Exception_Handling/baitap/book/src/main/java/com/example/aop/aop/BookAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai09_ AOP_Exception_Handling/baitap/book/src/main/java/com/example/aop/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai09_ AOP_Exception_Handling/baitap/book/src/main/java/com/example/aop/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai11_WebService_RESTful/baitap/blog/src/main/java/com/example/baitap/controler/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai11_WebService_RESTful/baitap/blog/src/main/java/com/example/baitap/controler/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/java/com/example/baitap/controler/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/java/com/example/baitap/controler/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/java/com/example/baitap/repository/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/java/com/example/baitap/repository/BlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/resources/templates/blog/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/resources/templates/blog/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/resources/templates/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai12_jQuery_AJAX/baitap/ajax_blog/src/main/resources/templates/blog_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/ContractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/FuramaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/model/FuramaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/repository/ContractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/repository/ContractRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/service/ContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/service/Impl/ContractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/java/com/example/casestudy/service/Impl/ContractServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/contract/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/contract/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/customer/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/customer/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/customer/save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/employee/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/employee/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/employee/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/employee/save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/listDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/listDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_contract.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_contract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_cus.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_cus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_employee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/list_service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/service/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../caseStudy/src/main/resources/templates/service/update.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1qjbDiRaOyD9yaIZ1H1vQdPUbey" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e3ec8b5-8c41-44ee-9bac-5cd240484b9d" name="Default Changelist" comment="" />
+      <created>1617595828817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617595828817</updated>
+      <workItem from="1617595830733" duration="617000" />
+      <workItem from="1620268862931" duration="351000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1617595849650">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617595849649" />
+  </component>
+</project>

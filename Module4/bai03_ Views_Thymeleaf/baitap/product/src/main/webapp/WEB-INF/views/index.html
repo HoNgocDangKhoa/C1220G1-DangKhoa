@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout:: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Product</h3>
+<p>
+    <a th:href="@{/create}">
+        Add new product
+    </a>
+</p>
+
+<p th:if="${success}" th:text="${success}"></p>
+
+<table id="product">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name Product</th>
+        <th>Price Product</th>
+        <th>Type product</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${show}">
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.nameProduct}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.typeProduct}"></td>
+        <td><a th:href="@{/edit(id=${product.id})}">edit</a></td>
+        <!--        <td><a th:href="@{/delete(id=${product.getId()})}">delete</a></td>-->
+        <td>
+            <a>
+                <input type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                       value="delete"
+                       th:onclick="|setIdToDeleteForm('${product.id}')|"/>
+
+            </a>
+        </td>
+        <td><a th:href="@{/view(id=${product.getId()})}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+<!--<footer th:replace="/layout :: footer"></footer>-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Are you sure to delete this product?</h4>
+            </div>
+            <div class="modal-footer">
+                <form action="/delete" method="post">
+                    <input type="hidden" name="id" id="id">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<th:block th:insert="/layout::js">
+
+</th:block>
+
+<script>
+    function setIdToDeleteForm(id) {
+        //id này chính là id của phần tử input trong form delete
+        document.getElementById("id").value = id;
+    }
+</script>
+
+</body>
+</html>

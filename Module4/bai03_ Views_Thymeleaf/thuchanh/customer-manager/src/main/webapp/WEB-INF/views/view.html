@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout::head">
+    <meta charset="UTF-8">
+    <title>View Customer</title>
+</head>
+<body>
+<p>
+    <a th:href="@{/}">Back to list Customer </a>
+</p>
+<div>
+    <form action="" th:object="${viewCus}">
+        <div>
+            <label>Id:</label>
+            <label th:text="${viewCus.getId()}"></label>
+        </div>
+        <div>
+            <label>Name:</label>
+            <label th:text="${viewCus.getName()}"></label>
+        </div>
+        <div>
+            <label>Email:</label>
+            <label th:text="${viewCus.getEmail()}"></label>
+        </div>
+        <div>
+            <label>Name:</label>
+            <label th:text="${viewCus.getAddress()}"></label>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

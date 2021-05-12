@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <a th:href="@{/}">
+        Back to customer list
+    </a>
+</p>
+<div>
+    <form action="" th:object="${showView}">
+    <div>
+        <label>Id:</label>
+        <label th:text="*{id}"></label>
+    </div>
+    <div>
+        <label>Title::</label>
+        <label th:text="*{title}"></label>
+    </div>
+    <div>
+        <label>Context:</label>
+        <label th:text="*{context}"></label>
+    </div>
+    <div>
+        <label>Registration Date:</label>
+        <label th:text="*{registrationDate}"></label>
+    </div>
+    </form>
+</div>
+
+</body>
+</html>

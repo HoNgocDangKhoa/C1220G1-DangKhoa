@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="layout::head">
+    <meta charset="UTF-8">
+    <title>Create Product</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/create}" method="post" th:object="${product}">
+        <table class="table table-hover">
+            <input type="hidden" class="form-control" th:field="*{idProduct}">
+            <tbody>
+            <tr>
+                <td>Name product</td>
+                <td >
+                    <input type="text" class="form-control" th:field="*{nameProduct}">
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td >
+                    <input type="text" class="form-control" th:field="*{price}">
+                </td>
+            </tr>
+            <tr>
+                <td>Type product</td>
+                <td >
+                    <input type="text" class="form-control" th:field="*{typeProduct}">
+                </td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td >
+                    <input type="text" class="form-control" th:field="*{amount}">
+                </td>
+            </tr>
+            <tr>
+                <td>Directory</td>
+                <td>
+                    <select class="form-control" th:field="*{directory}">
+                        <option th:each="type : ${directory}" th:value="${type.id}" th:text="${type.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Detail</td>
+                <td >
+                    <select class="form-control" th:field="*{detail}">
+                        <option th:each="type : ${detail}" th:value="${type.idDetail}" th:text="${type.idDetail}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+               <td>
+                   <a class="btn btn-warning" th:href="@{/}">back <i
+                           class="fas fa-edit"></i></a>
+               </td>
+                <td>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<th:block th:insert="layout::js">
+
+</th:block>
+</body>
+</html>

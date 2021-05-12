@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="layout::head">
+    <meta charset="UTF-8">
+    <title>View Product Detail</title>
+</head>
+<body>
+<div class="container">
+    <form th:object="${product}">
+        <h1>View Product Detail</h1>
+        <input type="hidden" class="form-control" th:field="*{detail.idDetail}">
+        <table>
+            <tbody>
+            <tr>
+                <td>Id Product</td>
+                <td>
+                    <input type="text" class="form-control" th:field="*{idProduct}" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Name Product</td>
+                <td>
+                    <input type="text" class="form-control" th:field="*{nameProduct}" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="text" class="form-control" th:field="*{price}" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>type Product</td>
+                <td>
+                    <input type="text" class="form-control" th:field="*{typeProduct}" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td>
+                    <input type="text" class="form-control" th:field="*{amount}" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Directory</td>
+                <td>
+                    <input type="text" class="form-control" th:field="*{directory.name}" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Context</td>
+                <td>
+                    <input type="text" class="form-control" th:field="${product.detail.context}" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Producer</td>
+                <td>
+                    <input type="text" class="form-control" th:field="${product.detail.producer}" disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a class="btn btn-warning" th:href="@{/}">back <i
+                            class="fas fa-edit"></i></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<th:block th:insert="layout::js"></th:block>
+</body>
+</html>
