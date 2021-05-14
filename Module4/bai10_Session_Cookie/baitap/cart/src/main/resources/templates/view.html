@@ -6,15 +6,14 @@
 </head>
 <body>
 <div class="container">
-    <div th:insert="/home::nav_bar"></div>
-    <form  method="post" th:action="@{/carts/create/(id=${product.getIdProduct()})}" th:object="${cart}">
+    <form th:object="${product}" th:action="@{shopping/create/(id=${product.id})}" method="post">
         <h1>View Product Detail</h1>
-        <table th:object="${product}">
+        <table>
             <tbody>
             <tr>
                 <td>Id Product</td>
                 <td>
-                    <input type="text" class="form-control" th:field="*{idProduct}" disabled>
+                    <input type="text" class="form-control" th:field="*{id}" disabled>
                 </td>
             </tr>
             <tr>
@@ -29,26 +28,23 @@
                     <input type="text" class="form-control" th:field="*{price}" disabled>
                 </td>
             </tr>
-            <tr>
-                <td>Amount</td>
-                <td>
-                    <input type="text" class="form-control" th:field="*{amount}" disabled>
-                </td>
-            </tr>
+
             <tr>
                 <td>
-                    <a class="btn btn-warning" th:href="@{/product}">back <i
+                    <a class="btn btn-warning" th:href="@{/}">back <i
                             class="fas fa-edit"></i></a>
                 </td>
                 <td>
-<!--                    <form th:action="@{carts/{id}/create(id=${product.idProduct})}" method="post" th:object="${cart}">-->
-                <input type="submit" value="add to cart"/>
-<!--            </form>-->
+                    <input type="submit" class="btn btn-success"  value="Buy Now"/>
+                    <!--                    <form th:action="@{carts/{id}/create(id=${product.idProduct})}" method="post" th:object="${cart}">-->
+                    <!--                <input type="submit" value="add to cart"/>-->
+                    <!--            </form>-->
                 </td>
             </tr>
             </tbody>
         </table>
-<!--    </form>-->
+    </form>
+
 </div>
 <th:block th:insert="layout::js">
 

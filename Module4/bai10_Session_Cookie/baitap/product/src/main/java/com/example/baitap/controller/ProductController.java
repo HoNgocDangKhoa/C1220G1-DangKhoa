@@ -48,14 +48,14 @@ public class ProductController {
         return "/product/cart-list";
     }
 
-    @PostMapping("view/carts/{id}/create")
-    public String createCart(Cart cart,Model model,@PathVariable Integer id){
+    @PostMapping("/carts/create")
+    public String createCart(Cart cart,Model model,@RequestParam Integer id){
         Product product = productService.findById(id);
         cart.addToCart(product);
         model.addAttribute("cart",cart.getCart());
 //        ServletRequestAttributes attr = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
 //        System.out.println(attr.getRequest().getSession(true).getAttribute("cart"));
-        return "redirect:/view";
+        return "product/cart-list";
     }
 
 
