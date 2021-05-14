@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="layout::head">
+    <meta charset="UTF-8">
+    <title>Create Product</title>
+</head>
+<body>
+<div class="container">
+    <div th:insert="/home::nav_bar"></div>
+    <h1 style="text-align: center">Create product</h1>
+    <form th:action="@{/product/create}" method="post" th:object="${product}">
+        <table class="table table-hover">
+            <input type="hidden" class="form-control" th:field="*{idProduct}">
+            <tbody>
+            <tr>
+                <td>Name product</td>
+                <td >
+                    <input type="text" class="form-control" th:field="*{nameProduct}">
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="text" class="form-control" th:field="*{price}">
+                </td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td >
+                    <input type="text" class="form-control" th:field="*{amount}">
+                </td>
+            </tr>
+            <tr>
+               <td>
+                   <a class="btn btn-warning" th:href="@{/product}">back <i
+                           class="fas fa-edit"></i></a>
+               </td>
+                <td>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<th:block th:insert="layout::js">
+
+</th:block>
+</body>
+</html>
