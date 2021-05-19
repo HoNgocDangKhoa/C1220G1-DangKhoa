@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{layout :: main-header}"></head>
+<body id="body">
+<div class="container ">
+    <h1 style="text-align: center">Blog</h1>
+    <button type="button" class="btn btn-info " id="create">
+        Create
+    </button>
+        <label>
+            <input class="form-control mr-sm-2" type="text" name="keyword" id="keyword"/>
+        </label>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search">Search</button>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Category</th>
+            <th scope="col">Context</th>
+            <th scope="col">Option</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="b:${blog}">
+            <td th:text="${b.id}"></td>
+            <td th:text="${b.title}"></td>
+            <td th:text="${b.category.name}"></td>
+            <td th:text="${b.context}"></td>
+            <td>
+                <button type="button" class="edit btn btn-primary " th:value="${b.id}">Edit</button>
+                <button type="button" class=" delete btn btn-danger" th:value="${b.id}"> Delete</button>
+                <a class="btn btn-success" th:href="@{/blog/view(id=${b.id})}">View</a>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="load">Tai them</button>
+</div>
+<!--<div>-->
+<!--    <nav aria-label="Page navigation example">-->
+<!--        <ul class="pagination">-->
+<!--            <li class="page-item">&lt;!&ndash;/*@thymesVar id="number" type="templates"*/&ndash;&gt;-->
+<!--            <a class="page-link" th:href="@{'/contract'(page=${blog.number - 1})}"-->
+<!--                                     th:if="${blog.hasPrevious()}">Previous</a></li>-->
+<!--            <li class="page-item" th:each="i: ${#numbers.sequence(0, blog.totalPages - 1)}">-->
+<!--                <a class="page-link" th:href="@{/contract(page = ${i})}"-->
+<!--                   th:text="${i + 1}"></a>-->
+<!--            </li>-->
+<!--            <li class="page-item"><a class="page-link" th:href="@{'/contract'(page=${listContract.number + 1})}"-->
+<!--                                     th:if="${listContract.hasNext()}">Next</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</div>-->
+
+<th:block th:insert="layout::js">
+</th:block>
+
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#create").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/blog/create/",
+                dataType: "HTML",
+                success: function (data) {
+                    $(".modal-body").html(data);
+                    $("#modelId").modal('show');
+                }
+            })
+
+        });
+        $(".edit").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/blog/edit/" + $(this).val(),
+                dataType: "HTML",
+                success: function (data) {
+                    $(".modal-body").html(data);
+                    $("#modelId").modal("show");
+                }
+            })
+
+        });
+        $(".delete").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/blog/delete/" + $(this).val(),
+                dataType: "HTML",
+                success: function (data) {
+                    $(".modal-body").html(data);
+                    $("#modelId").modal("show");
+                }
+            })
+
+        });
+        $("#search").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/blog/search/" + $("#keyword").val(),
+                dataType: "HTML",
+                success: function (data) {
+                    $("#body").html(data);
+                }
+            })
+
+        });
+        $("#load").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/blog/load/",
+                dataType: "HTML",
+                success: function (data) {
+                    $("#body").html(data);
+                }
+            })
+
+        });
+
+    })
+</script>
+</body>
+</html>

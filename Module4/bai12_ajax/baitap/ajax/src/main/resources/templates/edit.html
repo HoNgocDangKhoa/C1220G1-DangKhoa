@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="layout::main-header">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <form th:action="@{/blog/edit/(id=${blog.id})}" method="post" th:object="${blog}">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name">Title</label>
+                <input type="text" class="form-control" id="name" th:field="*{title}">
+            </div>
+            <div class="form-group">
+                <label for="context">Context</label>
+                <input type="text" class="form-control" id="context" th:field="*{context}">
+            </div>
+            <div class="form-group">
+                <label>Category</label>
+                <select class="form-control" th:field="*{category}">
+                    <option th:each="type : ${category}" th:value="${type.id}" th:text="${type.name}"></option>
+                </select>
+            </div>
+        </div>
+
+        <input type="submit"  value="Edit">
+    </form>
+</div>
+</body>
+</html>
