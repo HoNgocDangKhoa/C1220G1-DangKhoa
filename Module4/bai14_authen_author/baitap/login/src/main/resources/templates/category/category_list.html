@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{layout ::head}"></head>
+<body>
+
+<div class="container">
+    <div th:insert="~{index::nav_bar}"></div>
+    <h1 class="text-center">Category Blog</h1>
+    <a th:href="@{/category/create}">
+        <button class="btn-primary">Add new Category
+        </button>
+    </a>
+
+    <p th:if="${message}" th:text="${message}"></p>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Option</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="category,rowstat : ${categoryList}">
+            <tr>
+                <td th:text="${rowstat.index +1}"></td>
+                <td th:text="${category.id}"></td>
+                <td th:text="${category.name}"></td>
+                <td>
+                    <a class="btn btn-primary" th:href="@{category/edit(id=${category.id})}">Edit</a>
+                    <a class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"
+                       th:onclick="|getIdDelete('${category.id}')|"> Delete</a>
+                    <a class="btn btn-success" th:href="@{category/view(id=${category.id})}">View</a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a th:href="@{'/category'(page=${categoryList.number - 1})}" th:if="${categoryList.hasPrevious()}">Previous</a>
+    <span th:text="${categoryList.number + 1}"></span>/<span th:text="${categoryList.totalPages}"></span>
+    <a th:href="@{'/category'(page=${categoryList.number + 1})}" th:if="${categoryList.hasNext()}">Next</a>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Do you want to Category?
+            </div>
+            <div class="modal-footer">
+                <form action="/category/delete" method="post">
+                    <input type="hidden" id="id" name=id>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function getIdDelete(id) {
+        document.getElementById("id").value = id;
+    }
+</script>
+
+
+<th:block th:insert="layout::js">
+
+</th:block>
+
+</body>
+</html>

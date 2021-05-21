@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>View Blog</h1>
+<div th:insert="~{index::nav_bar}"></div>
+<div class="form-control">
+    <form  th:object="${view}">
+        <div class="form-control">
+            <p>id</p>
+            <label>
+                <input type="text" th:field="*{id}" disabled>
+            </label>
+        </div>
+        <div class="form-control">
+            <p>Title</p>
+            <label>
+                <input type="text" th:field="*{title}" disabled>
+            </label>
+        </div>
+        <div class="form-control">
+            <p>Category</p>
+            <label>
+                <input type="text" th:field="*{category.name}" disabled>
+            </label>
+        </div>
+        <div class="form-control">
+            <p>Context</p>
+            <label>
+                <input type="text" th:field="*{context}" disabled>
+            </label>
+        </div>
+        <div class="form-control">
+            <p>Day</p>
+            <label>
+                <input type="text" th:field="*{registrationDate}" disabled>
+            </label>
+        </div>
+    </form>
+    <div>
+        <a th:href="@{/blog}">Back to menu</a>
+    </div>
+</div>
+
+<th:block th:insert="layout::js">
+</th:block>
+</body>
+</html>

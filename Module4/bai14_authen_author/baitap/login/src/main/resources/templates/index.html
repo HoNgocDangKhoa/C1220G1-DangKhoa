@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: #e9d8f4;
+            color: #58257b;
+            padding: 20px;
+            text-align: center;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #58257b;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        .topnav a:hover {
+            background-color: #db7093;
+            color: white;
+            font-weight: bold
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="jumbotron text-center" style="margin-bottom:0"  th:fragment="image-header">
+    <a href="https://www.agoda.com/vi-vn/?cid=1891453&tag=26b932a7-0d36-a32b-8d98-f99b15e43afe&ckuid=94963b88-4b37-4690-9deb-91ea16a693de" style="float:left;"  >
+        <img src="https://nhanlucnganhluat.vn/uploads/images/051D288B/logo/2018-12/Logo-FURAMA-RESORT.jpg" style="width: 200px;height: 50px"></a>
+    <h5 style="text-align: center">Hồ Ngọc Đăng Khoa</h5 >
+    <div style="text-align: right">
+        <a th:href="@{/login}">Login</a>
+        <a th:href="@{/logout}">Logout</a>
+        <a th:href="@{/register}">Register</a>
+    </div>
+</div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" th:fragment="nav_bar">
+        <a class="navbar-brand" th:href="@{/}">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/blog}">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/category}" href="/user/">Category <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Service <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="contract" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contract
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="contract">
+                        <a class="dropdown-item" href="/">List Contract</a>
+                        <a class="dropdown-item" href="/">Add new Contract</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container-fluid" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-2">
+
+            <h3>Some Links</h3>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://dulichkhampha24.com/furama-resort-danang.html">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+            <div>
+                <a href="https://www.agoda.com/vi-vn/?cid=1891453&tag=26b932a7-0d36-a32b-8d98-f99b15e43afe&ckuid=94963b88-4b37-4690-9deb-91ea16a693de">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVvoFVbWnbLCgSP6swg92JdWD8pyLPwMEXme7Ylsw2RxFVTizM&usqp=CAU" style="height: 100px;width: 100Px">
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-10">
+            <h2>Furama Đà Nẵng</h2>
+            <div>
+                <a href="https://www.agoda.com/vi-vn/?cid=1891453&tag=26b932a7-0d36-a32b-8d98-f99b15e43afe&ckuid=94963b88-4b37-4690-9deb-91ea16a693de"> <img src="https://dulichkhampha24.com/wp-content/uploads/2020/07/Furama-Resort-Danang-c.jpg" style=" height: 600Px; width: 100%" ></a>
+            </div>
+            <div>
+                <p style="color: #a71d2a">
+                    KHU NGHỈ DƯỠNG ĐẲNG CẤP THẾ GIỚI FURAMA ĐÀ NẴNG, TỰ HÀO LÀ KHU NGHỈ DƯỠNG ẨM THỰC TẠI VIỆT NAM</p>
+
+            </div>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg">
+                <a href="https://www.agoda.com/vi-vn/?cid=1891453&tag=26b932a7-0d36-a32b-8d98-f99b15e43afe&ckuid=94963b88-4b37-4690-9deb-91ea16a693de">
+                </a>
+            </div>
+
+            <p>Some text..</p>
+        </div>
+    </div>
+</div>
+
+<th:block th:insert="layout::js">
+</th:block>
+</body>
+</html>
