@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39e2c855-1277-4abb-82a2-2ebde26955ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Module4/caseStudy/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module4/demo/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/DirectoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/DirectoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/Impl/DirectoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/Impl/DirectoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/Impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/Impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/java/com/example/baitap/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/oder/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/oder/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module4/bai06_Spring_JPA/baitap/product/src/main/resources/templates/product/view.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1tN83ZAmwMYas21E6a33IpOZkKT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39e2c855-1277-4abb-82a2-2ebde26955ab" name="Default Changelist" comment="" />
+      <created>1622597987375</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622597987375</updated>
+      <workItem from="1622597988498" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout::head}">
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<div style="height: 100px"></div>
+
+<aside class="d-flex justify-content-center align-items-center">
+    <article class="col-md-4">
+        <a th:href="@{/register}" class="float-right btn btn-outline-warning">Đăng Ký</a>
+        <h4 class="card-title mb-4 mt-1">Đăng Nhập</h4>
+        <hr>
+        <form th:action="@{/login}" method="post">
+            <p th:if="${param.error}" class="text-danger" style="text-align: center">Đăng nhập thất bại</p>
+            <div class="form-group">
+                <input name="username" class="form-control" placeholder="Nhập username" type="text">
+            </div> <!-- form-group// -->
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Nhập password" type="password">
+            </div> <!-- form-group// -->
+            <div class="col-12">
+                <input type="checkbox" name="remember-me"> Nhớ tài khoản
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning btn-block"> Đăng Nhập</button>
+                    </div> <!-- form-group// -->
+                </div>
+                <div class="col-12 text-right">
+                    <a class="small" href="#">Quên password?</a>
+                </div>
+            </div> <!-- .row// -->
+        </form>
+    </article>
+
+</aside> <!-- col.// -->
+<div style="height: 100px"></div>
+
+<footer th:replace="~{layout::js}"></footer>
+</body>
+</html>
